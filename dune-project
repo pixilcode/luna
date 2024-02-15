@@ -5,22 +5,17 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github pixilcode/luna-cli))
 
-(authors "Author Name")
+(authors "Brendon Bown")
 
-(maintainers "Maintainer Name")
-
-(license LICENSE)
-
-(documentation https://url/to/documentation)
+(license MIT)
 
 (package
  (name luna)
- (synopsis "A short synopsis")
+ (synopsis "A command line application (built for Unix/Linux) that can shut down your computer at a given time")
  (description "A longer description")
- (depends ocaml dune)
- (tags
-  (topics "to describe" your project)))
-
-; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
+ (depends
+  ocaml
+  dune
+  cmdliner))
