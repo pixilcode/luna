@@ -18,4 +18,4 @@
  (depends
   ocaml
   dune
-  (cmdliner (>= 1.2.0))))
+  (cmdliner (= 1.2.0))))
