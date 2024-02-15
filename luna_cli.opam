@@ -10,7 +10,7 @@ bug-reports: "https://github.com/pixilcode/luna_cli/issues"
 depends: [
   "ocaml"
   "dune" {>= "3.13"}
-  "cmdliner" {>= "1.2.0"}
+  "cmdliner" {= "1.2.0"}
   "odoc" {with-doc}
 ]
 build: [

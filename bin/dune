@@ -1,4 +1,4 @@
 (executable
  (public_name luna)
  (name main)
- (libraries luna))
+ (libraries luna_cli_commands cmdliner))

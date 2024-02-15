@@ -1,0 +1,4 @@
+(library
+ (name luna_cli_commands)
+ (modules sleep stay_awake all_nighter)
+ (libraries cmdliner))
