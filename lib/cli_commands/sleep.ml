@@ -8,6 +8,7 @@ open Cmdliner
    3. Figure out the next steps
 *)
 let sleep =
+   (* TODO: make this platform specific *)
    ignore (Sys.command "shutdown now")
 
 let sleep_t = Term.(const sleep)
