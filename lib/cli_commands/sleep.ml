@@ -2,10 +2,13 @@ open Cmdliner
 
 (* TODO: implement this function *)
 (* Steps to implementing:
-   1. Make a function that shuts down the computer
-   2. Figure out the next steps
+   1. [ ] Make a function that shuts down the computer
+   2. [ ] Make a library (?) that displays a 'notification'
+      * Maybe checkout the `bogue` GUI library
+   3. Figure out the next steps
 *)
-let sleep = failwith "unimplemented"
+let sleep =
+   ignore (Sys.command "shutdown now")
 
 let sleep_t = Term.(const sleep)
 
