@@ -18,10 +18,6 @@ let _chorus_t = Term.(const chorus $ count $ msg)
 
 let sleep_cmd = Luna_cli_commands.Sleep.cmd
 
-let stay_awake_cmd = Luna_cli_commands.Stay_awake.cmd
-
-let all_nighter_cmd = Luna_cli_commands.All_nighter.cmd
-
 let cmd =
   (* TODO: figure out a way to inject the command name *)
   let cli_name = "luna" in
@@ -29,7 +25,8 @@ let cmd =
   let man = [ (* TODO: write man pages *) ] in
   (* TODO: figure out a way to insert the version *)
   let info = Cmd.info cli_name ~version:"%%VERSION%%" ~doc ~man in
-  Cmd.group info [sleep_cmd; stay_awake_cmd; all_nighter_cmd]
+  (* TODO: implement all commands, not just sleep *)
+  Cmd.group info [sleep_cmd]
   (* Cmd.v info chorus_t *)
 
 let main () = exit (Cmd.eval cmd)
